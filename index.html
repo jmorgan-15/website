@@ -11,6 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!--Including MathJax for Latex expressions-->
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -25,46 +28,56 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Jacob Morgan</h1>
-								<p>I study galaxy formation and evolution through the lens of hydrodynamic simulations <br> and machine learning. 
-								I am also interested in outreach and data-driven pedagogy. <br> Check out my <a href="#Research">Research </a>, <a href="#Outreach">Outreach</a>, and <a href="#About">About</a> pages to learn more.
+								<p>I study galaxy formation and evolution through the lens of hydrodynamic simulations <br> 
+								and machine learning. I am also interested in outreach and data-driven pedagogy. <br> 
+								This website is still under construction, but check out my <br> 
+								<a href="#About">About</a>, <a href="#Research">Research</a>, and <a href="#Outreach">Outreach</a> pages to learn
+								more.
 							</div>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#About">About</a></li>
+								<li><a href="#Research">Research</a></li>
+								<li><a href="#Outreach">Outreach</a></li>
+								<li><a href="#Contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+						
+						<nav>
+							<ul>
+								<li><a href="#AboutImage">About this image</a></li>
 							</ul>
 						</nav>
 					</header>
 
 				<!-- Main -->
 					<div id="main">
-
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
+						<!-- About -->
+							<article id="About">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+							</article>
+							
+						<!-- Research -->
+							<article id="Research">
+								<h2 class="major">Research</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
 							</article>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
+						<!-- Outreach -->
+							<article id="Outreach">
+								<h2 class="major">Outreach</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 							</article>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
+						
 
 						<!-- Contact -->
 							<article id="contact">
@@ -91,10 +104,18 @@
 								</form>
 								<ul class="icons">
 									<li><a href="https://github.com/jmorgan-15" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/jacob-morgan-528851354/" target="blank" class="icon brands fa-linkedin"><span class="label">LinkdIn</span></a></li>
-									<li><a href="mailto:jmorgan15@crimson.ua.edu" target="blank"><span class="label">Email</span></a></li>
+									<li><a href="https://www.linkedin.com/in/jacob-morgan-528851354/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkdIn</span></a></li>
+									<li><a href="mailto:jmorgan15@crimson.ua.edu" target="_blank"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
+							
+						<!-- AboutImage -->
+							<article id="AboutImage">
+								<h2 class="major">About This Image</h2>
+								<span class="image main"><img src="images/TNG50_flow.jpg" alt="" /></span>
+								<p>The main background image on this site is an edge-on TNG50 galaxy, where gas density is in purple-to-orange and the arrows represent the direction and magnitude of mass flow. These images are prepared by the TNG team and more can be found <a href="https://www.tng-project.org/explore/gallery/" target="_blank">here</a>. This particular galaxy has a mass of \(10^{11.7}M_{\odot}\), which is similar to the Milky Way, and places it in the star-forming regime. The mass is strongly outflowing along the polar regions, and there is significant inflow along the disk (mostly on the left side). <a \href="https://iopscience.iop.org/article/10.3847/1538-4357/addf46" target="_blank">My first paper</a> stacked TNG100 halos of similar mass and feedback type to examine the average distribution of bulk material flows in the circumgalacytic medium. We found that higher mass star-forming galaxies experience the most metal enrichment because their larger gravitational wells result in better retention of outflowing material. Meanwhile, more massive galaxies (\(M>10^{12.0}M_{\odot}\)) fall into the active galactic nucleus (AGN) feedback regime. This feedback quenches the galaxy and expells large amounts of material from the central region, enriching the intergalactic medium.</p>
+							</article>
+
 
 						<!-- Elements -->
 							<article id="elements">
