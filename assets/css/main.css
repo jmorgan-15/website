@@ -1301,6 +1301,55 @@ input, select, textarea {
 			#header .logo .icon:before {
 				font-size: 2rem;
 			}
+			
+		#header .image {
+			width: 15.5rem;
+			height: 15.5rem;
+			line-height: 5.5rem;
+			border: solid 1px #ffffff;
+			border-radius: 100%;
+		}
+
+		        .image img {
+			    border-radius: 5px;
+			    display: block;
+			}
+
+			.image.left {
+			    float: left;
+			    margin: 0 2.5em 2em 0;
+			    top: 0.25em;
+			    overflow: hidden;
+			}
+
+			.image.right {
+			    float: right;
+			    margin: 0 0 2em 2.5em;
+			    top: 0.25em;
+			    overflow: hidden;
+			}
+
+			.image.fit {
+			    display: block;
+			    margin: 0 0 2.25em 0;
+			    width: 100%;
+			}
+			
+			    .image.fit img {
+				display: block;
+				width: 100%;
+			    }
+
+			.image.avatar {
+			    border-radius: 100%;
+			    overflow: hidden;
+			}
+
+			    .image.avatar img {
+				border-radius: 100%;
+				display: block;
+				width: 100%
+			    }
 
 		#header .content {
 			border-style: solid;
