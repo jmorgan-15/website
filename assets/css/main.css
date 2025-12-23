@@ -1236,7 +1236,8 @@ input, select, textarea {
 			}
 
 		}
-
+#special{font-weight:600;}
+#unspecial{font-weight:100;}
 /* Header */
 
 	#header {
@@ -1384,7 +1385,9 @@ input, select, textarea {
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
 				line-height: 2;
+				font-weight: 600;
 			}
+			
 
 		#header nav ul {
 			display: -moz-flex;
@@ -1426,7 +1429,8 @@ input, select, textarea {
 					#header nav ul li a:active {
 						background-color: rgba(255, 255, 255, 0.175);
 					}
-
+		
+		#header nav.use-middle {font-weight: 600;}
 		#header nav.use-middle:after {
 			content: '';
 			display: block;

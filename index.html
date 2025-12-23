@@ -29,7 +29,7 @@
 							<div class="inner">
 								<h1>Jacob Morgan</h1>
 								<p>I study galaxy formation and evolution through the lens of hydrodynamic simulations <br> 
-								and machine learning. I am also interested in outreach and data-driven pedagogy. <br> 
+								and machine learning. I am interested in outreach and data-driven pedagogy. <br> 
 								Check out the pages below to learn more!
 							</div>
 						</div>
@@ -46,7 +46,7 @@
 						
 						<nav>
 							<ul>
-								<li><a href="#AboutImage">About this image</a></li>
+								<li id='special'><a href="#AboutImage">About this image</a></li>
 							</ul>
 						</nav>
 					</header>
@@ -87,9 +87,14 @@
 						<!-- Research -->
 							<article id="Research">
 								<h2 class="major">Research</h2>
-								<span class="image main" filter=none brightness=100%><img src="images/LFB_SF_flow.png" alt="" /></span>
+								
+								<figure>
+									<span class="image main" filter=none brightness=100%><img src="images/LFB_SF_flow.png" alt="" /></span>
+									<figcaption>Average mass flow for stacks of low feedback (top) and star-forming (bottom) galaxies.</figcaption>
+								</figure>
+								
 								<p>I use cosmological magnetohydrodynamic simulations to study the gas dynamics of galaxies and how that effects their evolution. "Cosmological" means that a large chunk of the universe is simulated. "Magnetohydrodynamic" means the simulations include electromagnetic forces ("magneto") as well as fluid/thermodynamic forces such as pressure. These simulations contain a huge amount of information, and new techniques are needed to properly process it. Hydrodynamic simulations and machine learning may sound intimidating, but my research is relatively intuitive, and does not require previous experience. I have had a lot of undergraduate assistance in my work, and I'm always happy to have more!</p>
-								<p>Mass is an assumed driver of differences between galaxies. In <a href="https://iopscience.iop.org/article/10.3847/1538-4357/addf46" target="_blank">my first paper</a>, we stacked IllustrisTNG halos by mass and feedback type to look for correlations in the motion of the gas. By seperating our sample into groups by both star-formation rate and black hole activity, we can isolate the effects of each feedback type. We found that feedback type had a stronger impact on gas dynamics than mass. The image above shows plots of the average mass flow for low feedback halos (top) and star-forming halos (bottom). Inflows (outflows) are negative (positive). Low feedback galaxies have the largest inflow (blue and green lines) near \(0.2R_v\), which serves as a dividing line between the inner and outer CGM. Star-forming halos, however, have the highest inflow at maximum radius, because the larger outflows (red line) from central star-formation reduces the inflow at low radius.</p>
+								<p>Mass is an assumed driver of differences between galaxies. In <a href="https://iopscience.iop.org/article/10.3847/1538-4357/addf46" target="_blank">my first paper</a>, we stacked IllustrisTNG halos by mass and feedback type to look for correlations in the motion of the gas. By seperating our sample into groups by both star-formation rate and black hole activity, we can isolate the effects of each feedback type. We found that feedback type had a stronger impact on gas dynamics than mass. The image above shows plots of the average mass flow for low feedback halos (top) and star-forming halos (bottom). Inflows (outflows) are negative (positive). Low feedback galaxies have the largest inflow (blue and green lines) near <span id='unspecial'>\(0.2R_v\)</span>, which serves as a dividing line between the inner and outer CGM. Star-forming halos, however, have the highest inflow at maximum radius, because the larger outflows (red line) from central star-formation reduces the inflow at low radius.</p>
 								<p>This plot also includes the effects of the "fuzz"-- a collection of particles not easily accessed in the simulation, that nonetheless have significant effects on both gas dynamics and observables such as column density. It is important to compare simulations with observations, but these comparisons will not be even if all mass along a line of sight is measured in observations, and only "member particle density" is measured in simulations. Fuzz particles are more enriched than surrounding halo gas, and tend to move outward, implying they may be connected to feedback events. I had several undergraduates help me with tracking the fuzz between snapshots and characterize their motion.</p>
 								<p>I also designed the software infrastucture for the Circumgalactic Dictionary. The circumgalactic medium (CGD) is a diffuse but expansive collection of gas surrounding galaxies. Most gas and metal is actually in the CGM, quite for from the bright centers of galaxies. But because the gas does not give off much light, it is hard to study directly. The Circumgalactic Dictionary will use the open-source python packages yt and Trident to create millions of mock spectra of IllustrisTNG. This high density sample of sightlines will be used to train a machine learning algorithm to predict underlying gas properties based on observables such as column density and halo properties such as star formation rate, halo mass, etc. We had one undergraduate on this project who recently got a masters degree, and another is currently doing a first analysis of the spectral data.</p>
 								<p>Recently I joined a group that is creating a machine learning model that will use photometry to predict the chemical abundances of red giants within globyular clusters. Globular clusters are very old, dense clumps of stars that retain information about the gas they formed from, telling us about the gas that was in the Milky Way billions of years ago. The initial data gathering and processing, and succssful HST proposal, were all done by a team of undergraduates (and the PI, <a href="https://physics.ua.edu/people/jeremy-bailin/">Jeremy Bailin</a>). I am supervising an undergraduate in making the final model, and helping the original undergraduate team move their code and documentation to GitHub.</p>
